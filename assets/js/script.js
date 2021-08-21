@@ -29,11 +29,11 @@ function generatePassword() {
 
   var checked = document.querySelectorAll("input:checked");
   for (var i = 0; i < checked.length; i++) {
-    if ( checked[i].id == "lowercase") {
+    if ( checked[i].id === "lowercase") {
       allChars += "abcdefghijklmnopqrstuvwxyz";     
-    } else if (checked[i].id == "uppercase") {
+    } else if (checked[i].id === "uppercase") {
       allChars += "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    } else if (checked[i].id == "numbers") {
+    } else if (checked[i].id === "numbers") {
       allChars += "0123456789";
     } else {
       allChars += " !\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~";
